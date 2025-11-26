@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Go User Server Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+    #nickname {
+      font-weight: bold;
+    }
+    #log {
+      border: 1px solid #ccc;
+      padding: 8px;
+      height: 300px;
+      overflow-y: auto;
+      background: #fafafa;
+      margin-top: 10px;
+      white-space: pre-wrap;
+      font-size: 14px;
+    }
+    button {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Go User Server Test</h1>
+  <div>
+    내 닉네임: <span id="nickname">(연결 안 됨)</span>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <button id="connectBtn">Connect</button>
+    <button id="disconnectBtn" disabled>Disconnect</button>
+  </div>
+
+  <!-- 채팅 입력 영역 -->
+  <div style="margin-top: 10px;">
+    <input id="chatInput" type="text" placeholder="메시지를 입력하세요" style="width: 70%;" />
+    <button id="sendBtn" disabled>Send</button>
+  </div>
+
+  <div id="log"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
